@@ -1,38 +1,25 @@
 package com;
 
+import com.factory.DriverHelper;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class Hooks
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public Hooks(String testName )
-    {
-        super( testName );
+import java.io.IOException;
+
+
+public class Hooks{
+    DriverHelper helper=new DriverHelper();
+
+    @Before
+    public void setUp()throws IOException{
+        helper.openBrowser();
+    }
+    @After
+    public void tearDown(){
+        helper.closeBroswer();
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( Hooks.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
