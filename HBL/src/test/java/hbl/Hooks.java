@@ -14,7 +14,7 @@ public class Hooks{
     public void setUp()throws IOException{
         helper.openBrowser();
     }
-    @After
+  //  @After
     public void tearDown(){
         helper.closeBroswer();
     }

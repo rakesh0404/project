@@ -19,7 +19,7 @@ public class DriverHelper {
     public void openBrowser() throws IOException {
 
         Properties prop = new Properties();
-        FileInputStream fs = new FileInputStream(System.getProperty("/src/test/resources/config.properties"));
+        FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/config.properties");
         prop.load(fs);
         String browser=prop.getProperty("browser");
 
@@ -39,6 +39,7 @@ public class DriverHelper {
         }
 
         driver.manage().window().maximize();
+        driver.get(prop.getProperty("url"));
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
