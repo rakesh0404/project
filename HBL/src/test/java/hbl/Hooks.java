@@ -1,11 +1,8 @@
-package com;
+package hbl;
 
-import com.factory.DriverHelper;
+import hbl.factory.DriverHelper;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 import java.io.IOException;
 

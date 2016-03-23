@@ -1,7 +1,7 @@
-package com.steps;
+package hbl.steps;
 
 /**
  * Created by rkesireddy on 23/03/2016.
  */
-public class AddUserSteps {
+public class WareHouseSteps {
 }

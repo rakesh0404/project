@@ -1,4 +1,4 @@
-package com.steps;
+package hbl.steps;
 
 /**
  * Created by rkesireddy on 23/03/2016.

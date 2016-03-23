@@ -1,4 +1,4 @@
-package com.factory;
+package hbl.factory;
 
 
 import org.openqa.selenium.WebDriver;
